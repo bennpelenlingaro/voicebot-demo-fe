@@ -10,7 +10,7 @@ const Layout = () => {
       </div>
       
       {/* Main content */}
-      <div className="flex-1 overflow-auto">
+      <div className="flex-1">
         <Outlet />
       </div>
     </div>
