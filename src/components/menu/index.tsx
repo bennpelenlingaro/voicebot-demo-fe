@@ -15,7 +15,7 @@ const Menu = () => {
   ]
 
   return (
-    <ul className="py-4 space-y-2 bg-[#0A0422] h-full">
+    <ul className="py-4 space-y-2 bg-sidebar-bg h-full">
       {menuItems.map((item) => {
         return (
             <li className="mb-10">
