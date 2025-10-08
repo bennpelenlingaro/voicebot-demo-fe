@@ -4,6 +4,7 @@ import { useDashboardStore } from '@/store/dashboardStore'
 import KPICards from '@/components/kpi-cards'
 import AnomalyAlert from '@/components/anomaly-alert'
 import CallTable from '@/components/call-table'
+import Chart from '@/components/chart'
 import { filterTabs, mainTabs, subTabs, timeFrameOptions, type TimeFrameOption } from '@/config/dashboardConfig'
 
 const Dashboard = () => {
@@ -122,11 +123,7 @@ const Dashboard = () => {
         
         <div className="flex-1 overflow-hidden">
           {selectedSubTab === 'Log' && <CallTable />}
-          {selectedSubTab === 'Analysis' && (
-            <div className="text-center py-8 text-gray-500">
-              Analysis view coming soon...
-            </div>
-          )}
+          {selectedSubTab === 'Analysis' && <Chart />}
         </div>
       </div>
     </div>
