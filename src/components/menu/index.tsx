@@ -1,4 +1,4 @@
-import logoSvg from '@/assets/logo.svg'
+import logoSvg from '@/assets/icons/logo.svg'
 
 const Menu = () => {
   const menuItems = [
@@ -29,7 +29,7 @@ const Menu = () => {
         <ul className="space-y-2">
           {menuItems.map((item) => {
             return (
-                <li className="mb-10">
+                <li key={item.path} className="mb-10">
                   <a href={item.path} className="no-underline flex flex-col items-center">
                       <span className="inline-block w-[70px] h-[66px] bg-white mb-2 rounded-[10px]"></span>
                       <span className="">{item.label}</span>
